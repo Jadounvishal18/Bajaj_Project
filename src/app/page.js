@@ -15,7 +15,7 @@ export default function Home() {
   const handleSubmit = async () => {
   try {
     const payload = JSON.parse(jsonInput); // Validate JSON
-    const response = await axios.post("http://localhost:3001/api/bhfl", payload);
+    const response = await axios.post("http://localhost:3000/api/bhfl", payload);
 
     console.log("API Response:", response.data);
 
